@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/jandrews/test'
-let g:netrw_dirhist_2='/home/jandrews/Github'
-let g:netrw_dirhist_3='/home/jandrews/Github/BashScriptingUtility'
-let g:netrw_dirhist_4='/home/jandrews/Github'
-let g:netrw_dirhist_5='/home/jandrews/Github/smenu'
-let g:netrw_dirhist_6='/home/jandrews/Github'
-let g:netrw_dirhist_7='/home/jandrews/Github/BashScriptingUtility'

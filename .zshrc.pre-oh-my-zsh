@@ -1,0 +1,3 @@
+# Source correct zsh config
+source ~/.config/zsh/zshconfig
+

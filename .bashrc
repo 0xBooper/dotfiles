@@ -1,10 +1,8 @@
-########################
-#                      #
-#    .BASHRC FILE      #
-#   MADE BY 0XBOOPER   #
-#                      #
-########################
+#
+# ~/.bashrc
+# 
+#
+# Modified and made by 0xBooper
 
-# Source correct config
-source $HOME/.config/bash/bash_conf
-
+# Source the correct bash config file
+source /home/jandrew/.config/bash/bashconfig
