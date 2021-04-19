@@ -14,7 +14,11 @@ A few **notable** things are:
 Some things that are required to be installed for my dotfiles to work:
 
 - bash shell ( of course )
+- zsh
 - awesome WM
 - neovim
 - pfetch
 
+### Credits
+The [wallpapers](https://github.com/0xBooper/dotfiles/tree/main/Wallpapers) are taken from [Makccr's](https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw) Wallpapers repo.
+I use em, since it is a really great collection of wallpapers to use.
