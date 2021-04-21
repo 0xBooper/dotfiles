@@ -22,7 +22,7 @@ Some things that are required to be installed for my dotfiles to work:
 - pfetch
 
 ### You could also...
-You can also just run my (arch based distros only, debian support coming soon) dotfiles deployment script [here](https://github.com/0xBooper/dotfiles)
+You can also just run my (arch based distros only, debian support coming soon) dotfiles deployment script [here](https://github.com/0xBooper/dotfiles-deploy)
 
 ### Credits
 The [wallpapers](https://github.com/0xBooper/dotfiles/tree/main/Wallpapers) are taken from [Makccr's](https://www.youtube.com/channel/UCWh6YtclgTAzReTASc4uSKw) Wallpapers repo.
