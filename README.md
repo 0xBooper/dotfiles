@@ -7,8 +7,6 @@ A few **notable** things are:
 
 - [my Neovim config](https://github.com/0xBooper/dotfiles/tree/main/.config/nvim)
 - [Bash config and prompt](https://github.com/0xBooper/dotfiles/tree/main/.config/bash)
-
-(A picture of my custom-made bash prompt, with the  square brackets being git info.)
 - [my awesomeWM config](https://github.com/0xBooper/dotfiles/tree/main/.config/awesome)
 
 ### Required things:
