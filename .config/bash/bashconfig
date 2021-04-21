@@ -32,7 +32,7 @@ alias parrot="curl parrot.live"
 export EDITOR="nvim"
 
 # Autorun
-[ "$CURRENTDIR" != "/home/jandrew" ] && cd ~
+[ "$CURRENTDIR" != "$HOME" ] && cd ~
 clear
 pfetch # Use neofetch if you don't have this
 echo "Run startx to start awesomeWM."
