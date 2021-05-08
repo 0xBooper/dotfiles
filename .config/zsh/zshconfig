@@ -18,6 +18,9 @@ compinit
 
 # CUSTOM CONFIG BEGINS
 
+# Enable LS colors.
+alias ls="ls --color=auto "
+
 # Variables for some stuff
 currentdir=$(pwd)
 currenttty=$(tty)
@@ -35,11 +38,11 @@ alias discord="discord &"
 # A few autorun things
 [ $currenttty = "/dev/tty1" ] && bash # If using tty, switch to Bash (zsh has themes that don't work on the tty)
 curl parrot.live # Awesome parrot :)
-[ $currentdir != "$HOME" ] && cd ~ # If not in the home dir when startup, cd to the home dir.
+[ $currentdir != "~" ] && cd ~ # If not in the home dir when startup, cd to the home dir.
 
 clear
 
-pfetch # Flex that i'm using Arch/Artix
+pfetch # Flex that i'm using Arch
 echo "Run startx to start awesomeWM"
 
 
