@@ -35,11 +35,11 @@ alias discord="discord &"
 # A few autorun things
 [ $currenttty = "/dev/tty1" ] && bash # If using tty, switch to Bash (zsh has themes that don't work on the tty)
 curl parrot.live # Awesome parrot :)
-[ $currentdir != "~" ] && cd ~ # If not in the home dir when startup, cd to the home dir.
+[ $currentdir != "$HOME" ] && cd ~ # If not in the home dir when startup, cd to the home dir.
 
 clear
 
-pfetch # Flex that i'm using Arch
+pfetch # Flex that i'm using Arch/Artix
 echo "Run startx to start awesomeWM"
 
 
