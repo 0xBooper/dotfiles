@@ -8,8 +8,9 @@ My dotfiles may **NOT** work on all distros.
 A few **notable** things are:
 
 - [my Neovim config](https://github.com/0xBooper/dotfiles/tree/main/.config/nvim)
-- [Bash config and prompt](https://github.com/0xBooper/dotfiles/tree/main/.config/bash)
+- [my bash config and prompt](https://github.com/0xBooper/dotfiles/tree/main/.config/bash)
 - [my awesomeWM config](https://github.com/0xBooper/dotfiles/tree/main/.config/awesome)
+- [my Polybar config](https://github.com/0xBooper/dotfiles/tree/main/.config/polybar)
 
 ### Required things:
 
@@ -19,7 +20,7 @@ Some things that are required to be installed for my dotfiles to work:
 - zsh
 - awesome WM
 - neovim
-- pfetch
+- pfetch/neofetch (if neofetch, adjust bash config accordingly)
 
 ### Getting the wallpapers (optional, but recommended):
 First, clone the repo. Run:
@@ -29,9 +30,11 @@ Second, go to the wallpapers. Run:
 `cd wallpapers/2020`
 
 Lastly, move the wallpapers to the correct directory. Run:
-`mkdir ~/Wallpapers && mv *.jpg ~/Wallpapers`
+`mkdir --parents ~/Media/Wallpapers && mv *.jpg ~/Media/Wallpapers`
 
 The wallpapers should be all set up!
+To randomize it, replace `nitrogen --restore` with `nitrogen --random ~/Media/Wallpapers/`
+Otherwise, run `nitrogen` and select a background. 
 
 ### You could also...
 You can also just run my (arch based distros only, debian support coming soon) dotfiles deployment script [here](https://github.com/0xBooper/dotfiles-deploy)

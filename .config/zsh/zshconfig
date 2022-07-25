@@ -1,0 +1,48 @@
+# Spaceship prompt
+autoload -U promptinit; promptinit
+prompt spaceship
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt autocd
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/jandrew/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+#
+
+# CUSTOM CONFIG BEGINS
+
+# Enable LS colors.
+alias ls="ls --color=auto "
+
+# Variables for some stuff
+currentdir=$(pwd)
+currenttty=$(tty)
+
+# ALias
+alias zshconf="nvim ~/.config/zsh/zshconfig"
+alias pac="sudo pacman"
+alias ..="cd .."
+alias bc="nitrogen --set-zoom-fill --random ~/Wallpapers"
+alias src="source .zshrc"
+alias config="cd ~/.config && ls"
+alias parrot="curl parrot.live"
+alias discord="discord &"
+
+# A few autorun things
+[ $currenttty = "/dev/tty1" ] && bash # If using tty, switch to Bash (zsh has themes that don't work on the tty)
+curl parrot.live # Awesome parrot :)
+[ $currentdir != "~" ] && cd ~ # If not in the home dir when startup, cd to the home dir.
+
+clear
+
+pfetch # Flex that i'm using Arch
+echo "Run startx to start awesomeWM"
+
+
