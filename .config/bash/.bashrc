@@ -1,12 +1,19 @@
 #
 # ~/.bashrc
-#
+
 # Modified by 0xBooper
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+# Allow cding into directories by typing directory name
+shopt -s autocd
+
+# Infinite history
+HISTSIZE=
+HISTFILESIZE=
+
+# Default prompt
 # PS1='[\u@\h \W]\$ '
 
 CURRENTDIR=$(pwd)
@@ -21,7 +28,6 @@ PS1+="\n\[\033[1;34m\]\w " # Shows directory
 PS1+="\[\033[1;97m\]\$\[\033[0;39m\] " # Shows  a $ or #
 
 # Alias
-alias syncScripts="cp ~/Scripts/* ~/Repos/Scripts/Scripts"
 alias bashconf="nvim ~/.config/bash/bashconfig"
 alias pac="sudo pacman"
 alias ..="cd .."
@@ -29,18 +35,35 @@ alias bchange="nitrogen --set-zoom-fill --random ~/Wallpapers"
 alias config="cd .config; ls"
 alias parrot="curl parrot.live"
 alias SS="systemctl"
+alias ss="sudo poweroff"
+alias sr="sudo reboot"
 alias sv="sudo nvim"
 alias v="nvim"
-alias la="exa -la"
+alias g="git"
+alias la="exa -lah"
 alias ls="exa"
 alias c="sudo corepack"
 alias cyarn="sudo corepack yarn"
+
+# Colored commands
+alias grep="grep --color=auto"
+alias cat="highlight --out-format=ansi"
 
 # Exports
 export EDITOR="nvim"
 export PATH=$PATH:/home/jandrew/Scripts/
 
 # Autorun
+
+# SSH init
+SSHAGENT=/usr/bin/ssh-agent
+SSHAGENTARGS="-s"
+if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
+    eval `$SSHAGENT $SSHAGENTARGS` &
+    trap "kill $SSH_AGENT_PID" 0
+fi
+
+sudo mount /dev/sdf1 ~/MainStorage # Some USB mounting stuff.
 [ "$CURRENTDIR" != "$HOME" ] && cd ~
 clear
 neofetch
