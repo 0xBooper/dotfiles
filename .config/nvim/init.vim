@@ -27,7 +27,7 @@ syntax on " Enable syntax highlighting
 set mouse=a "Enable mouse
 set noerrorbells " Remove error sounds
 set expandtab
-set tabstop=4 softtabstop=4 " Tabs
+set tabstop=2 softtabstop=2 " Tabs
 set nowrap "Remove wrapping
 set relativenumber " Kewl line numbers
 set smartcase " For searching
@@ -43,6 +43,14 @@ autocmd InsertEnter * norm zz " Center document when entering insert mode.
 inoremap jk <Esc>
 nnoremap <Esc>s :split<Return>
 nnoremap <Esc>v :vsplit<Return>
+
+" Map alt-j to move a line down, and alt-k to move a line up
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Map CTRL-X to save and quit
 map <C-x> :x<Return>
