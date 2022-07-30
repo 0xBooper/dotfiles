@@ -28,6 +28,7 @@ PS1+="\n\[\033[1;34m\]\w " # Shows directory
 PS1+="\[\033[1;97m\]\$\[\033[0;39m\] " # Shows  a $ or #
 
 # Alias
+alias conf="cd ~/.config/"
 alias clr="clear"
 alias pac="sudo pacman"
 alias ..="cd .."
@@ -63,7 +64,7 @@ if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
     trap "kill $SSH_AGENT_PID" 0
 fi
 
-sudo mount /dev/sdf1 ~/MainStorage # Some USB mounting stuff.
+sudo mount /dev/sdf1 ~/NTFS # Some USB mounting stuff.
 [ "$CURRENTDIR" != "$HOME" ] && cd ~
 clear
 neofetch

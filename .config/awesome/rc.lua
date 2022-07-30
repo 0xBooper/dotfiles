@@ -324,7 +324,7 @@ globalkeys = gears.table.join(
               {description = "Launch Firefox", group = "jandrew"}),
 
     awful.key({ modkey },            "d",     function ()
-    awful.util.spawn("discord") end,
+    awful.util.spawn("cdiscord") end,
               {description = "Launch Discord", group = "jandrew"}),
 
     --awful.key({ modkey }, "x",
@@ -540,3 +540,5 @@ awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("/home/jandrew/Scripts/launchPolybar")
 awful.spawn.with_shell("kmix")
 awful.spawn.with_shell("nm-applet")
+awful.spawn.with_shell("cdiscord")
+awful.spawn.with_shell("firefox")
