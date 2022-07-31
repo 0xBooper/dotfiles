@@ -17,6 +17,14 @@ Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'romgrk/barbar.nvim'
 
+" Autocomplete-related
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  " list of CoC extensions needed
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting
+Plug 'jiangmiao/auto-pairs' 
+Plug 'yuezk/vim-js'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'maxmellon/vim-jsx-pretty'
+
 " Theme-related
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
@@ -103,8 +111,15 @@ let bufferline.auto_hide = v:false
 " Enable/disable animations
 let bufferline.animation = v:true
 
+" Bufferline icons
+let bufferline.icon_separator_active = '▎'
+let bufferline.icon_separator_inactive = '▎'
+let bufferline.icon_close_tab = ''
+let bufferline.icon_close_tab_modified = '●'
+let bufferline.icon_pinned = '車'
+
 " Enable/disable icons
-let bufferline.icons = v:false
+let bufferline.icons = v:true
 
 " Barbar mappings
 " Move to previous/next
