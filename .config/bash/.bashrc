@@ -69,5 +69,5 @@ fi
 sudo mount /dev/sdf1 ~/NTFS # Some USB mounting stuff.
 [ "$CURRENTDIR" != "$HOME" ] && cd ~
 clear
-neofetch
-
+pfetch
+# neofetch
