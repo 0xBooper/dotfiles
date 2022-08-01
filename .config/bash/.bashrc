@@ -29,6 +29,8 @@ PS1+="\[\033[1;97m\]\$\[\033[0;39m\] " # Shows  a $ or #
 
 # Alias
 alias conf="cd ~/.config/"
+alias repos="cd ~/Repos"
+alias repos="cd ~/Repos"
 alias clr="clear"
 alias pac="sudo pacman"
 alias ..="cd .."
