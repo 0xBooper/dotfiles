@@ -79,6 +79,9 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " Map CTRL-X to save and quit
 map <C-x> :x<Return>
+" Map CTRL-Q to quit with no changes
+map <C-q> :q!<Return>
+
 " Map NERDTree plugin
 map  <C-s> :NERDTreeToggle<Return>
 
