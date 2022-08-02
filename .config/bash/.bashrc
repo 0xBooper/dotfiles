@@ -1,5 +1,6 @@
 #
 # ~/.bashrc
+#
 
 # Modified by 0xBooper
 
