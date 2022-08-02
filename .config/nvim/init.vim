@@ -58,7 +58,7 @@ set smartcase " For searching
 set noswapfile " Remove swap file
 set title " Add a titlebar  
 set laststatus=2 " Lightline config"
-set noshowmode " Lightline config (remove base mode info"
+set noshowmode " Lightline config (remove base mode info)"
 
 " Autocmds
 autocmd InsertEnter * norm zz " Center document when entering insert mode.
