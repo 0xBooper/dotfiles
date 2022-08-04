@@ -29,6 +29,8 @@ PS1+="\n\[\033[1;34m\]\w " # Shows directory
 PS1+="\[\033[1;97m\]\$\[\033[0;39m\] " # Shows  a $ or #
 
 # Alias
+alias sl="sudo !!"
+alias sysU="sudo pacman -Sy archlinux-keyring && sudo pacman -Su"
 alias conf="cd ~/.config/"
 alias repos="cd ~/Repos"
 alias repos="cd ~/Repos"
@@ -56,6 +58,8 @@ alias cat="highlight --out-format=ansi"
 # Exports
 export EDITOR="nvim"
 export PATH=$PATH:/home/jandrew/Scripts/
+export TERM="kitty"
+export term="kitty"
 
 # Autorun
 
