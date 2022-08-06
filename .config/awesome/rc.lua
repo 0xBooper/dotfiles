@@ -315,8 +315,8 @@ globalkeys = gears.table.join(
 
     -- Dmenu
     awful.key({ modkey },            "r",     function ()
-    awful.util.spawn("dmenu_run") end,
-              {description = "Launch dmenu", group = "jandrew"}),
+    awful.util.spawn("rofi -show run") end,
+              {description = "Run prompt (rofi)", group = "jandrew"}),
 
     -- Firefox
     awful.key({ modkey },            "b",     function ()
