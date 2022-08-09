@@ -53,7 +53,8 @@ alias cyarn="sudo corepack yarn"
 
 # Colored commands
 alias grep="grep --color=auto"
-alias cat="highlight --out-format=ansi"
+alias cat="bat" # better cat
+alias ucat="cat"
 
 # Exports
 export EDITOR="nvim"
