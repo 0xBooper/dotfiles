@@ -59,7 +59,7 @@ alias ucat="cat"
 
 # Exports
 export EDITOR="nvim"
-export PATH=$PATH:/home/jandrew/Scripts/
+export PATH=$PATH:/home/$USER/Scripts/
 export TERM="kitty"
 export term="kitty"
 
@@ -73,7 +73,6 @@ if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
     trap "kill $SSH_AGENT_PID" 0
 fi
 
-sudo mount /dev/sdf1 ~/NTFS # Some USB mounting stuff.
 [ "$CURRENTDIR" != "$HOME" ] && cd ~
 clear
 pfetch
