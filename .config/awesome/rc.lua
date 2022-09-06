@@ -536,6 +536,7 @@ beautiful.useless_gap = 5
 
 -- Autostart stuff
 awful.spawn.with_shell("picom")
+awful.spawn.with_shell("kmix")
 awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("/home/jandrew/Scripts/launchPolybar")
 awful.spawn.with_shell("nm-applet")
