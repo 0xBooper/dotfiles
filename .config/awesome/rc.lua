@@ -3,7 +3,7 @@
 pcall(require, "luarocks.loader")
 
 -- Require collision
--- require("collision")()
+require("collision")()
 
 -- Standard awesome library
 local gears = require("gears")
@@ -324,7 +324,7 @@ globalkeys = gears.table.join(
               {description = "Launch Firefox", group = "jandrew"}),
 
     awful.key({ modkey },            "d",     function ()
-    awful.util.spawn("cdiscord") end,
+    awful.util.spawn("discord-canary") end,
               {description = "Launch Discord", group = "jandrew"}),
 
     --awful.key({ modkey }, "x",
@@ -536,8 +536,8 @@ beautiful.useless_gap = 5
 
 -- Autostart stuff
 awful.spawn.with_shell("picom")
-awful.spawn.with_shell("kmix")
 awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("/home/jandrew/Scripts/launchPolybar")
 awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("firefox")
+awful.spawn.with_shell("kmix")
