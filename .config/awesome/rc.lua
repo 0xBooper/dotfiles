@@ -323,6 +323,11 @@ globalkeys = gears.table.join(
     awful.util.spawn("firefox") end,
               {description = "Launch Firefox", group = "jandrew"}),
 
+    -- Screenshot (ksnip)
+    awful.key({ modkey },            "k",     function ()
+    awful.util.spawn("ksnip -r -d 5") end,
+              {description = "Launch Ksnip", group = "jandrew"}),
+
     awful.key({ modkey },            "d",     function ()
     awful.util.spawn("discord-canary") end,
               {description = "Launch Discord", group = "jandrew"}),
