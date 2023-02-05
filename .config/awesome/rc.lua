@@ -539,6 +539,10 @@ end)
 -- Gaps
 beautiful.useless_gap = 5
 
+-- Window Edge Colors
+client.connect_signal("focus", function(c) c.border_color = "#D6EFFF" end)
+client.connect_signal("unfocus", function(c) c.border_color = "#084887" end)
+
 -- Autostart stuff
 awful.spawn.with_shell("picom")
 awful.spawn.with_shell("nitrogen --restore")
